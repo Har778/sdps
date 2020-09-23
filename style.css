@@ -97,3 +97,25 @@ div.dropdown-content{
 .dropdown:hover .dropdown-content{
 	display: block;
 }
+
+#navbar-lite #navbar-lite-img{
+	background-image: url('sidebar.png');
+}
+
+
+@media (max-width: 870px){
+	.container{
+		max-height: 100%;
+	}
+}
+
+@media (max-width: 570px){
+	img{
+		width: 300px;
+		height: 80px;
+	}
+	button #navbar-lite-img{
+		width: 20px;
+		height: 20px;
+	}
+}
