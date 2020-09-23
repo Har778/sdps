@@ -1,0 +1,41 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html{
+	font: normal 18px sans-serif; 
+}
+
+.fluid{
+	background: #123e6b;
+	animation: 1s fadein 0.5s forwards;
+	opacity: 0;
+}
+
+@keyframes fadein{
+	100%{
+		opacity: 1;
+	}
+}
+
+ul li a#nav-link,
+ul li a#nav-link-main{
+	font-family: 'Noto Sans JP', sans-serif;
+	font-size: 18px;
+	color: #fff;
+}
+
+a#nav-link:hover,
+a#nav-link:active{
+	animation: bounceIn;
+	animation-duration: 0.5s;
+}
+
+a#nav-link-main{
+	animation: flash;
+	animation-iteration-count: infinite;
+	animation-duration: 1s;
+	animation-delay: 0.5s;
+}
